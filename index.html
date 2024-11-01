@@ -3,37 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Facebook Clone</title>
+    <title>Tebak Gambar Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>My Facebook Clone</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">Notifications</a></li>
-                <li><a href="#">Logout</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="post-form">
-            <textarea placeholder="What's on your mind?"></textarea>
-            <button>Post</button>
-        </section>
-        <section class="posts">
-            <div class="post">
-                <h2>User Name</h2>
-                <p>This is a sample post content!</p>
-            </div>
-            <!-- More posts can be added here -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Facebook Clone</p>
-    </footer>
+    <div class="container">
+        <h1>Tebak Gambar</h1>
+        <img id="game-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXnnxC9s-U0bGOplsnMvpfvHQtWACwXWljlg&s" alt="Tebak Gambar">
+        <input type="text" id="answer" placeholder="Tebak nama gambar...">
+        <button onclick="checkAnswer()">Tebak</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
